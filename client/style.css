@@ -1,0 +1,172 @@
+Body {
+    font-family: Sans-serif;
+    width: 100%;
+    background-color: #E0E0E0;    
+}
+h1 {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}   
+.card {
+    max-width: 100%;
+    top: 88px;
+    margin: 0 auto;
+    display: block;  
+}  
+ol.list {
+    padding-top: 2em;
+    padding-left: 15px;
+    max-width: 650px;
+    margin: 0 auto;
+} 
+ol.list .text {
+    float: right;
+    width: 60%;  
+} 
+ol.list h3,
+ol.list .actions,
+ol.list label {
+    float: left;
+    width: 30%;    
+} 
+ol.list > li,
+ol.list > h3 {
+    max-width: 600px;
+    margin: 0 auto;
+} 
+ol.list > h2 {
+    padding-bottom: 6px;
+} 
+H2,
+h1,
+button {
+    margin-left: 5px;
+    font-family: 'Arbutus Slab', serif;
+}
+h2 {
+    color: #607D8B;
+}
+.card-item:hover,
+button:hover {
+    color: #00838F;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, .14), 0 3px 1px -6px rgba(0, 0, 0, .2), 2px 5px 3px 0 rgba(0, 0, 0, .12);  
+} 
+button.addbutt {
+    background-color: #EEEEEE;
+    color: #607D8B;
+    width: 100%;
+} 
+.list > button.addbutt {
+    max-width: 330px;
+}
+button:active,
+button:focus {
+    box-shadow: 0 0 0 0, 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .12);
+    color:#00838F; 
+}
+button {
+    align-items: center;
+    background-color: #EEEEEE;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #607D8B;
+    position: relative;
+    margin: 0;
+    min-width: 44px;
+    padding: 10px 16px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+ol.kanban {
+    border-top: 5px solid #78909C;
+    width: 20%;
+    height: auto;
+    margin: 1%;
+    max-width: 250px;
+    min-width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    flex-direction: column;
+    min-height: 200px;
+    z-index: 1;
+    position: relative;
+    background:lightblue;
+    padding: 1em;
+    border-radius: 2px;
+}
+.title {
+    font-size: 24px;
+}
+.text {
+    color: grey;
+    border-top: 1px solid; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+}
+.card {
+    position: relative;
+    display: block;
+    list-style: none;
+} 
+.card-list {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+.card-list .card-list {
+    padding-left: 30px;
+}    
+.card-item {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid lightskyblue;
+    background: #fafafa;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+}
+.card-item:hover {
+    background: #fff;    
+} 
+.card-item > button {
+    display: block;
+    position: relative;
+    cursor: move;
+    float: left;
+    width: 25px;
+    height: 20px;
+    margin: 5px 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+}

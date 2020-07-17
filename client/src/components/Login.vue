@@ -33,7 +33,7 @@ export default {
             password: "",
             tasks: [],
             params: {
-                client_id: "814286810680-pm4mtcl9k87fqvafi0s6s8a1fuacclok.apps.googleusercontent.com"
+                client_id: "814286810680-17gok5otnrclb7s461utupo58c69b4iu.apps.googleusercontent.com"
             },
             renderParams: {
                 width: 250,
@@ -49,7 +49,7 @@ export default {
         login() {
             axios({
                 method: 'POST',
-                url: 'http://localhost:3000/users/login',
+                url: 'https://ancient-reef-69810.herokuapp.com/users/login',
                 data: { email: this.email, password: this.password } 
             })
             .then(results => {
@@ -79,7 +79,7 @@ export default {
         getTasks() {
             axios({
                 method: 'get',
-                url: 'http://localhost:3000/tasks',
+                url: 'https://ancient-reef-69810.herokuapp.com/tasks',
                 headers: {
                     access_token: localStorage.token
                 }   
@@ -100,7 +100,7 @@ export default {
             
             axios({
                 method: "POST",
-                url: "http://localhost:3000/users/googleSignIn",
+                url: "https://ancient-reef-69810.herokuapp.com/users/googleSignIn",
                 data: {id_token}
             })
             .then(results => {

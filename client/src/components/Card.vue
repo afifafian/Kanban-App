@@ -65,7 +65,7 @@ export default {
             ]
             axios({
                 method: 'GET',
-                url: 'http://localhost:3000/tasks',
+                url: 'https://ancient-reef-69810.herokuapp.com/tasks',
                 headers: {
                     access_token: localStorage.token
                 }   

@@ -38,7 +38,7 @@ export default {
         register() {
             axios({
                 method: 'POST',
-                url: 'http://localhost:3000/users/register',
+                url: 'https://ancient-reef-69810.herokuapp.com/users/register',
                 data: { name: this.name, email: this.email, password: this.password } 
             })
             .then(results => {

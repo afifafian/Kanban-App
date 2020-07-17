@@ -55,7 +55,7 @@ export default {
             this.isEdit = true
             axios({
                 method: 'GET',
-                url: `http://localhost:3000/tasks/${id}`,
+                url: `https://ancient-reef-69810.herokuapp.com/tasks/${id}`,
                 headers: {
                     access_token: localStorage.token
                 }   
@@ -80,7 +80,7 @@ export default {
         edited(id) {
             axios({
                 method: 'PUT',
-                url: `http://localhost:3000/tasks/${id}`,
+                url: `https://ancient-reef-69810.herokuapp.com/tasks/${id}`,
                 headers: {
                     access_token: localStorage.token
                 },
@@ -112,7 +112,7 @@ export default {
             console.log('masuk?')
             axios({
                 method:'DELETE',
-                url: `http://localhost:3000/tasks/${id}`,
+                url: `https://ancient-reef-69810.herokuapp.com/tasks/${id}`,
                 headers: {
                     access_token: localStorage.token
                 }   
